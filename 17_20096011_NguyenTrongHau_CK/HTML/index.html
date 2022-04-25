@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo</title>
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <script src="../JS/jquery-3.6.0.min.js"></script>
+    <script src="../JS/bootstrap.min.js"></script>
+    <script src="../JS/index.js"></script>
+</head>
+
+<body>
+    <!-- -----------------Thiết kế modal----------------- -->
+    <div class="modal fade" role="dialog" id="myModal">
+        <div class="modal-dialog" style="margin-top:10px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="text-left">THÔNG TIN CÁ NHÂN</h2>
+                </div>
+                <div class="modal-body">
+                    <form role="form" class="form-horizontal" style="margin: top 10px;" action="">
+                        <!-- ------ Họ tên --------- -->
+                        <label for="Name" class="control-label col-xs-3">Họ tên</label>
+                        <div class="col-xs-9">
+                            <input type="text" name="" id="Name" class="form-control">
+                            <span class="text-danger" id="tbName">*</span>
+                        </div>
+                        <!-- ------ Số áo --------- -->
+
+                        <label for="CMND" class="control-label col-xs-3">SCMND Cũ</label>
+                        <div class="col-xs-9">
+                            <input type="text" name="" id="CMND" class="form-control">
+                            <span class="text-danger" style="color: red;" id="tbCMND">*</span>
+                        </div>
+                        <!-- ------ Địa chỉ --------- -->
+
+                        <label for="DC" class="control-label col-xs-3">Quê quán</label>
+                        <div class="col-xs-9">
+                            <input type="text" name="" id="DC" class="form-control">
+                            <span class="text-danger" style="color: red;" id="tbDc">*</span>
+                        </div>
+                        <!-- ----Email --------- -->
+
+                        <label for="Email" class="control-label col-xs-3">Email</label>
+                        <div class="col-xs-9">
+                            <input type="email" name="" id="Email" class="form-control">
+                            <span class="text-danger" style="color: red;" id="tbEmail">*</span>
+                        </div>
+                        <!-- ------ Số điện thoại --------- -->
+
+                        <label for="SDT" class="control-label col-xs-3">Điện thoại</label>
+                        <div class="col-xs-9">
+                            <input type="text" name="" id="SDT" class="form-control">
+                            <span class="text-danger" style="color: red;" id="tbSDT">*</span>
+                        </div>
+                        <!-- ------ Ảnh đại diện --------- -->
+
+                        <label for="ADD" class="control-label col-xs-3">Ảnh đại diện</label>
+                        <div class="col-xs-9">
+                            <input type="file" name="" style="color: red;" id="ADD" class="form-control"  accept=".jpg, .jpeg, .png" >
+                            <span class="text-danger" id="tbAdd">*</span>
+                        </div>
+                        <button class="btn btn-sucess btn-group-justified" id="Save" type="button"
+                            style="color: white; background-color: green; width: 100%;">Lưu</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="col-xs-12">
+            <img src="../IMG/banner.PNG" alt="" width="100%">
+        </div>
+        <div class="col-xs-12">
+            <nav class="navbar navbar-expand-sm">
+                <ul class="navbar nav">
+                    <li class="navbar-item"><a href="#" class="navbar-link" style="margin-right: 20px;" id="btn1">Đăng
+                            nhập</a></li>
+                    <li class="navbar-item"><a href="#" class="navbar-link" id="btn2">Đăng ký</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col-xs-12">
+            <h4 style="text-align:center; font-size: 40px; font-weight: 400; margin: 30px;">DANH SÁCH ĐĂNG KÝ LÀM CĂN CƯỚC SINH VIÊN TRƯỜNG DHCN THÀNH PHỐ HỒ CHÍ MINH</h4>
+            <table class="table table-striped" role="table" id="danhSach">
+                <tr>
+                    <th>STT</th>
+                    <th>Họ tên</th>
+                    <th>SCMND cũ</th>
+                    <th>Quê quán</th>
+                    <th>Email</th>
+                    <th>Điện thoại</th>
+                    <th>Ảnh đại diện</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <div class="col-xs-12">
+            <p style="text-align: center;">SVTH: MÃ SINH VIÊN:20096011 - NGUYỄN TRỌNG HẬU Lớp: DHCNTT16B</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
